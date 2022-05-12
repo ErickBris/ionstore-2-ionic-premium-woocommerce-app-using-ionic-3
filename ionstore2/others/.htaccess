@@ -1,0 +1,6 @@
+header set Access-Control-Allow-Origin "*"
+header set Access-Control-Allow-Headers "origin,content-type,user-agent, accept, x-r$"
+header set Access-Control-Allow-Methods "PUT,GET,POST,DELETE,OPTIONS,HEAD"
+
+#added a rewrite to response with 200 SUCCESS on every OPTIONS request
+#RewriteRule ^(.*)$ $l [R=200,L]
